@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+  <script type="text/javascript">
+    // This bit removes all the entries from the score board and adds them in again
+    // TODO: Update each row individually 
+    function updateScores()
+    { 
+      $('#highScores').load(' #highScores > *');
+
+      $.ajax({
+        type: 'GET',
+        url: '/scores',
+        dataType: 'JSON',
+        success: function(data) {
+          for (var i=0; i<data.length; i++) {
+            var row = $('<tr><td style="background-color:rgb(0, 0, 0);">' + data[i].name + '</td><td style="background-color:rgb(0, 0, 0);"">' + data[i].highScore + '</td></tr>');
+            $('#scoreBoard').append(row);
+          }
+        },
+        // error: function(jqXHR, textStatus, errorThrown){
+        //     alert('Error: ' + textStatus + ' - ' + errorThrown);
+        // }
+      });
+    };
+  </script>
+  
+  <head>
+    <title>The Assistant</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script> <!-- Need this to use ajax --> 
+  </head>
+
+  <body style="background-color:#000000"  onload="updateScores()">
+    <header>
+      <h1>THE ASSISTANT</h1>
+      <!-- <p>TAGLINE</p> -->
+    </header>
+    <div class="container">
+
+      <!-- Info screen -->
+      <div class="left flipped">
+        <div class="content">
+
+          <h2 id="sticky">How to play</h2>
+
+          <h3>Objectives</h3>
+          <p>
+            Stay alive, find keys to unlock doors: <img src="assets/sprites/display/items/key.png" style="width:26px;height:26px;">, 
+            collect these: <img src="assets/sprites/display/items/collectable.png" style="width:26px;height:26px;">, escape!
+          </p>
+
+          <h3>Controls</h3>
+          <p> 
+            <img src="assets/sprites/display/key-icons/w.png" style="width:26px;height:26px;">,  
+            <img src="assets/sprites/display/key-icons/s.png" style="width:26px;height:26px;">,
+            <img src="assets/sprites/display/key-icons/a.png" style="width:26px;height:26px;">,
+            <img src="assets/sprites/display/key-icons/d.png" style="width:26px;height:26px;">: movement<br>
+            <img src="assets/sprites/display/key-icons/left-click.png" style="width:26px;height:26px;">: attack/interact<br>
+            <img src="assets/sprites/display/key-icons/right-click.png" style="width:26px;height:26px;">: switch weapon<br>
+            <img src="assets/sprites/display/key-icons/x.png" style="width:26px;height:26px;">: toggle light<br>
+            <img src="assets/sprites/display/key-icons/esc.png" style="width:26px;height:26px;">: pause<br>
+            <!-- <img src="assets/sprites/display/key-icons/space.png">: sneak -->     
+          </p>
+          
+          <h3>Creatures</h3>
+            <table class="info">
+              <tr>
+                <td><img src="assets/sprites/display/items/mantis.png" style="width:40px;height:40px;"></td>
+                <td><b>likes</b>: loud noises<br> <b>dislikes</b>: ??<br></td> 
+              </tr>
+              <tr>
+                <td><img src="assets/sprites/display/items/beetle.png" style="width:40px;height:40px;"></td>
+                <td><b>likes</b>: bright lights<br> <b>dislikes</b>: loud noises<br></td> 
+              </tr>
+              <tr>
+                <td><img src="assets/sprites/display/items/rat.png" style="width:40px;height:40px;"></td>
+                <td><b>likes</b>: rat stuff<br> <b>dislikes</b>: being shot<br></td> 
+              </tr>
+            </table>
+          
+        </div>
+      </div>      
+      
+      <!-- High score screen -->
+      <div id="highScores" class="right">
+        <h2 id="sticky">High scores</h2>
+
+        <!-- Put the table inside another table so it can be vertically aligned -->
+        <table style="vertical-align: middle; border: none; border-collapse: collapse; height: 100%; width: 100%;">
+          <tr>
+            <td style="border: none; border-collapse: collapse;">
+              <table id="scoreBoard" class="scores">
+                <!-- <tr>
+                  <th>Name</th>
+                  <th>Score</th> 
+                </tr> -->
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- The game screen -->
+      <div class="middle" style="background-color:#bbb;">
+        <div id="parent">
+          <!-- <script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.min.js"></script>   -->
+
+          <script src="src/phaser.js"></script>
+
+          <script src="src/interactive-items.js"></script>
+          <script src="src/sound-collider.js"></script>
+          <script src="src/enemy.js"></script>
+          <script src="src/player.js"></script>
+
+          <script src="src/tiled-scene.js"></script>
+          <script src="src/start-menu.js"></script>
+          <script src="src/top-down-shooter.js"></script>
+          <script src="src/start-scene.js"></script>
+
+          <script src="src/TheAbduction.js"></script>
+          <script src="src/ui-overlay.js"></script>
+          <script src="src/menu.js"></script>
+          <script src="src/summary-screen.js"></script>
+
+          <script src="src/easystar-0.4.4.min.js"></script>
+          <script defer src="src/game.js"></script>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
