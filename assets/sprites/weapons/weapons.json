@@ -1,0 +1,395 @@
+{
+	"textures": [
+		{
+			"image": "weapons.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 195,
+				"h": 195
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "m16.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 107,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 107,
+						"h": 31
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 107,
+						"h": 31
+					},
+					"anchor": {
+						"x": 0.28972,
+						"y": 0.612903
+					}
+				},
+				{
+					"filename": "axe.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 79,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 79,
+						"h": 32
+					},
+					"frame": {
+						"x": 110,
+						"y": 1,
+						"w": 79,
+						"h": 32
+					},
+					"anchor": {
+						"x": 0.265823,
+						"y": 0.28125
+					}
+				},
+				{
+					"filename": "chester.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 105,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 105,
+						"h": 23
+					},
+					"frame": {
+						"x": 1,
+						"y": 34,
+						"w": 105,
+						"h": 23
+					},
+					"anchor": {
+						"x": 0.27619,
+						"y": 0.434783
+					}
+				},
+				{
+					"filename": "shotgun.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 77,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 20
+					},
+					"frame": {
+						"x": 108,
+						"y": 35,
+						"w": 77,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.155844,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "machete.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 75,
+						"h": 15
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 75,
+						"h": 15
+					},
+					"frame": {
+						"x": 108,
+						"y": 57,
+						"w": 75,
+						"h": 15
+					},
+					"anchor": {
+						"x": 0.133333,
+						"y": 0.4
+					}
+				},
+				{
+					"filename": "cricket.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 102,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 102,
+						"h": 16
+					},
+					"frame": {
+						"x": 1,
+						"y": 59,
+						"w": 102,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0.168675,
+						"y": 0.538462
+					}
+				},
+				{
+					"filename": "marine.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 87,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 87,
+						"h": 35
+					},
+					"frame": {
+						"x": 105,
+						"y": 74,
+						"w": 87,
+						"h": 35
+					},
+					"anchor": {
+						"x": 0.275862,
+						"y": 0.628571
+					}
+				},
+				{
+					"filename": "flamethrower.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 98,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 98,
+						"h": 58
+					},
+					"frame": {
+						"x": 1,
+						"y": 77,
+						"w": 98,
+						"h": 58
+					},
+					"anchor": {
+						"x": 0.173469,
+						"y": 0.413793
+					}
+				},
+				{
+					"filename": "snake.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 67,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 67,
+						"h": 46
+					},
+					"frame": {
+						"x": 1,
+						"y": 137,
+						"w": 67,
+						"h": 46
+					},
+					"anchor": {
+						"x": 0.179104,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "bullet-0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 6
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 6
+					},
+					"frame": {
+						"x": 1,
+						"y": 185,
+						"w": 17,
+						"h": 6
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "bullet-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 5
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 5
+					},
+					"frame": {
+						"x": 20,
+						"y": 185,
+						"w": 14,
+						"h": 5
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "uzi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 36
+					},
+					"frame": {
+						"x": 70,
+						"y": 137,
+						"w": 60,
+						"h": 36
+					},
+					"anchor": {
+						"x": 0.383333,
+						"y": 0.444444
+					}
+				},
+				{
+					"filename": "luger.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 55,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 55,
+						"h": 25
+					},
+					"frame": {
+						"x": 132,
+						"y": 111,
+						"w": 55,
+						"h": 25
+					},
+					"anchor": {
+						"x": 0.145455,
+						"y": 0.56
+					}
+				},
+				{
+					"filename": "robo.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 49,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 49,
+						"h": 28
+					},
+					"frame": {
+						"x": 132,
+						"y": 138,
+						"w": 49,
+						"h": 28
+					},
+					"anchor": {
+						"x": 0.142857,
+						"y": 0.535714
+					}
+				},
+				{
+					"filename": "decker.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 37,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 37,
+						"h": 26
+					},
+					"frame": {
+						"x": 132,
+						"y": 168,
+						"w": 37,
+						"h": 26
+					},
+					"anchor": {
+						"x": 0.194444,
+						"y": 0.576923
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:ef1d10457360138a9a6e44afc5ce7bb3:8ac79bab58e0ec0108e27fd1bfe6d467:ba48453f8b2235fdb166a51105f49255$"
+	}
+}
